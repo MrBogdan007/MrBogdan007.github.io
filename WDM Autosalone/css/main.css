@@ -1,0 +1,465 @@
+::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+:-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+::-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+body {
+  font-family: RobotoRegular, sans-serif;
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+}
+.hidden {
+  display: none;
+}
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+.parallax {
+  background-attachment: fixed;
+  background-position: 50% 0;
+  position: relative;
+}
+header {
+  background-image: url(../img/top_bg.jpg);
+  min-height: 644px;
+  background-repeat: repeat-x;
+  background-position: top center;
+  position: relative;
+  background-size: cover;
+  font-family: "BebasRegular";
+}
+header a{
+  color:#fff;
+}
+.top_line {
+  min-height: 97px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 0 0 1px;
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 0 1px;
+  width: 100%;
+  top: 0;
+  padding: 22px 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.top_addr {
+  padding-left: 50px;
+  line-height: 26px;
+  background: url(../img/top_map.png) no-repeat left top;
+}
+.top_addr a:hover {
+border-bottom: transparent 1px dashed;
+transition: all .25s;
+}
+
+.top_addr strong {
+  display: block;
+  color: #d12f22;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 31px;
+  font-family:"BebasBold";
+}
+.top_addr a {
+font-size: 24px;
+border-bottom: #fff dashed 1px;
+
+}
+.top_line .logo{
+border-bottom: none;
+position: absolute;
+margin-top: -18px;
+
+}
+.top_line .logo:hover{
+border-bottom: none;
+}
+.logo_wrap{
+margin:auto;
+position: relative;
+width: 240px;
+
+}
+.ta_right{
+background-image: none;
+padding-left: 0;
+text-align: right;
+}
+
+.ta_right span{
+color: #fff;
+}
+header h1{
+color: #fff;
+text-align: center;
+margin-top: 68px;
+font-size: 40px;
+text-shadow: 0 3px rgba(0,0,0,0.55);
+font-family: "BebasRegular";
+}
+.button{
+display: inline-block;
+background-color: #d12f22;
+height: 50px;
+vertical-align: middle;
+line-height: 50px;
+padding:0 50px;
+font-size: 20px;
+border-bottom:#bd4f47 4px solid ;
+color: #fff;
+font-family: "BebasBold";
+}
+.button:hover{
+background-color: #e64437;
+}
+.button:active{
+background-color:#A02F22
+}
+header .button{
+margin-right: 20px;  
+}
+.st_button{
+line-height: 18px;
+padding-top: 7px;
+padding-left: 63px;
+text-align: left;
+background-image: url(../img/camara_icon.png);
+background-position: 8px 8px;
+background-repeat: no-repeat;
+}
+.buttons_top{
+position: absolute;
+width: 100%;
+bottom: 32px;
+}
+.top_mnu{
+height: 62px;
+background-color: #242424;
+-webkit-box-shadow: rgba(255, 255, 255, 0.3) 0 0 0 1px;
+box-shadow: rgba(255, 255, 255, 0.3) 0 0 0 1px;
+font-family: "BebasRegular";
+text-transform: uppercase;
+}
+.top_mnu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+.top_mnu a{
+display: block;
+color: #fff;
+font-size: 20px;
+padding: 0 26px 0 54px;
+line-height: 62px;
+border-left: 1px solid #3b3b3b;
+background-image: url(../img/top_mnu_inconset.png);
+background-repeat: no-repeat;
+background-position: 15px 10px;
+}
+.top_mnu li{
+float:left;
+}
+.top_mnu li.active a,
+.top_mnu li:hover a{
+background-color: #050505;
+}
+.top_mnu li:nth-child(2) a {
+background-position: 15px -54px;
+}
+.top_mnu li:nth-child(3) a{
+    background-position: 21px -130px;
+}
+.top_mnu li:nth-child(4) a{
+background-position: 15px -210px;
+}
+.top_mnu li:nth-child(5) a{
+background-position: 15px -278px;
+}
+.top_mnu li:nth-child(6) a{
+    background-position: 15px -346px; 
+}
+.waranty {
+color: #fff;
+cursor: default;
+float: right;
+font-size: 16px;
+border: 1px solid #fff;
+border-radius: : 3px;
+padding:5px 10px;
+line-height: 14px;
+margin-top: 10px;
+}
+.w_left{
+font-family: "BebasBold";
+font-size: 15px;
+margin-top: 5px;
+margin-right: 8px;
+}
+.w_left,
+.w_right{
+display: inline-block;
+vertical-align: top;
+}
+.w_left span{
+ font-size: 34px; 
+}
+.w_right{
+  font-family: "RobotoCondencedRegular";
+}
+.main_cats{
+background-color: #191919;
+padding: 20px 0 40px;
+}
+.main_cats h2,
+.art_header {
+text-transform: uppercase;
+color: #c9c9c9;
+font-family: "BebasRegular";
+font-size: 40px;
+text-align: center;
+}
+.main_cats h2 strong {
+color: #fff;
+}
+.main_cats h2 span{
+color: #d12f22;
+}
+section h2,
+article h2{
+position: relative;
+}
+.s_black h2::before{
+position: absolute;
+content: "";
+margin-left: -68px;
+top: 19px;
+width: 50px;
+height: 20px;
+background-image:url(../img/heder_img.png);
+}
+.s_black h2::after{
+position: absolute;
+content: "";
+margin-left: 20px;
+top: 19px;
+width: 50px;
+height: 20px;
+background-image:url(../img/heder_img.png);
+background-position: -50px 0;
+}
+article h2.art_header::before{
+position: absolute;
+content: "";
+margin-left: -68px;
+top: 19px;
+width: 50px;
+height: 20px;
+background-image:url(../img/heder_img.png);
+}
+article h2.art_header::after{
+position: absolute;
+content: "";
+margin-left: 20px;
+top: 19px;
+width: 50px;
+height: 20px;
+background-image:url(../img/heder_img.png);
+background-position: -50px 0;
+}
+.mc_item{
+border: #353535 1px solid;
+border-radius: 2px;
+width: 145px;
+vertical-align: bottom;
+height: 172px;
+
+}
+.mc_wrap {
+text-align: center;
+padding: 0;
+}
+
+.mc_item_wrap{
+float: left;
+margin-left: 30px;
+display: inline-block;
+text-align: center;
+margin-right: 20px; 
+}
+.mc_item_wrap a{
+color: #fff;
+}
+.mc_item span{
+display: block;
+height: 85px;
+width: 130px;
+background-image:url(../img/cats_iconset.png);
+margin: 15px auto 10px;
+}
+
+.mc_item_wrap:nth-child(1) span {
+background-position: 10px 0;
+}.mc_item_wrap:nth-child(2) span {
+background-position: -125px 0;
+}.mc_item_wrap:nth-child(3) span {
+background-position: -266px 0;
+}.mc_item_wrap:nth-child(4) span {
+background-position: -412px 0;
+}.mc_item_wrap:nth-child(5) span {
+background-position: -550px 0;
+}.mc_item_wrap:nth-child(6) span {
+background-position: -700px 0;
+}
+.mc_item_wrap:first-child{
+margin-left: 0px;
+}
+.mc_item h4{
+font-family: "BebasBold";
+font-size: 20px;
+font-weight: normal;
+margin-top: 5px;
+margin-bottom: 7px;
+}
+
+.mc_item a:hover ,
+.mc_item_wrap.active  {
+  text-decoration: underline;
+}
+.mc_item_wrap.active,.mc_item_wrap:hover {
+background-color: #2A2A2A; 
+}
+.mc_toggle{
+background-color: #212121;
+bottom: 0;
+height: 25px;
+position: relative;
+cursor: pointer;
+background-image:url(../img/mc_art.png);
+background-repeat: no-repeat;
+background-position: 73px 10px;
+}
+.mc_item_wrap.active .mc_toggle,.mc_item_wrap:hover .mc_toggle{
+background-color: #353535;
+background-position: -118px 10px;
+}
+body .mc_wrap .mc_item_wrap > ul  {
+  position: absolute;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px 0;
+  font-size: 20px;
+  background-color: #353535;
+  margin-top: 20px;
+  z-index: 10;
+  display: none;
+  left: 0;
+}
+.mc_item_wrap.active > ul li {
+display: inline-block;
+font-family: "BebasRegular";
+}
+.mc_item_wrap.active > ul li a {
+padding: 0 10px;
+}
+.mc_item_wrap.active > ul li a:hover {
+text-decoration: none;
+}
+.mc_item_wrap_af{
+background-image:url(../img/mc_c_arrow.png);
+height: 22px;
+width: 22px;
+content: "";
+position: absolute;
+margin: 5px 69px;
+display: none;
+}
+.mc_button_w{
+  text-align: center;
+  margin-top: 30px;
+}
+article.content{
+background-color: #E9E9E9;
+}
+article .art_header{
+color: #050505;
+margin-bottom: 10px;
+}
+p.h_descr{
+min-width: 790px;
+text-align: center;
+margin: auto;
+margin-top: 0;
+color: #050505;
+}
+.home_items{
+background-color: #D7D7D7;
+padding: 30px 0;
+margin-top: 40px;
+}
+.hi_item img{
+max-width: 100%;
+min-height: 60%;
+border-top: #AC160A 8px solid;
+}
+.hi_item{
+color:#050505;
+text-align: center;
+font-size: 14px;
+margin-bottom: 50px;
+}
+.s_bottom img{
+max-width: 90%;
+bottom: 0;
+position: absolute;
+
+}
+.s_bottom{
+  padding-top: 32px;
+}
+.sb_header h2{
+margin: 0;
+text-transform: uppercase;
+font-family: "BebasRegular";
+font-size: 36px;
+}
+.sb_content{
+  margin-top: 30px;
+}
+.sb_header.button_cont{
+text-align: right;
+
+}
+footer{
+  background-color: #2A2A2A;
+  color: #fff;
+  padding: 28px 0 35px;
+  font-family: "BebasBold";
+  font-size: 20px;
+}
+footer a{
+color: #fff;
+padding: 0 10px;
+text-decoration: underline;
+}
+footer ul{
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+footer li{
+float: left;
+}
