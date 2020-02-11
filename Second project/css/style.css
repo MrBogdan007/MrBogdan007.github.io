@@ -1,0 +1,35 @@
+body{
+	text-align: center;
+}
+.header {
+	margin-top: 2%;
+	width:90%;
+	height: 240px;
+	background-color: #fff934;	
+	display: inline-block;
+}
+.menu{
+	display: inline-block;
+	width: 25%;
+	height: 500px;
+	background-color: #94ff97;	
+	margin-right: 2%;
+	margin-top: 2%;
+}
+.content{
+	display: inline-block;
+	margin-left: -4px;
+	margin-top: 2%;
+	width: 65%;
+	height: 500px;
+	background-color: #ab94ff;
+}
+ /* if  < 600px & min-width > 320px*/ 
+@media(min-width: 320px) and (max-width: 600px){
+	.content{
+		width: 95%;
+	}
+	.menu{
+		width: 95%;
+	}
+}
