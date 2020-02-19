@@ -48,8 +48,12 @@ body {
   color: #262626;
 }
 
+body img {
+  max-width: 100%;
+}
+
 body .section {
-  padding: 100px 0;
+  padding: 70px 0;
 }
 
 body .section-title {
@@ -64,6 +68,7 @@ body .section__title {
 }
 
 body .button-o {
+  text-decoration: none;
   text-transform: uppercase;
   border: 2px solid #506fe1;
   padding: 17px 22px;
@@ -74,12 +79,30 @@ body .button-o {
 }
 
 body .button {
+  text-decoration: none;
   padding: 25px 45px;
   text-transform: uppercase;
   border: none;
   background-color: #506fe1;
   color: #ffffff;
   font-family: 'Proxima Nova Semibold',sans-serif;
+}
+
+body .button-fitting {
+  color: #506fe1;
+  background-color: #ffffff;
+}
+
+body .button-add {
+  background-color: #7c93e8;
+  color: #ffffff;
+}
+
+body .button-like {
+  background-color: #506fe1;
+  height: 30px;
+  width: 30px;
+  border: none;
 }
 
 body .bg-secondary {
@@ -437,7 +460,7 @@ body .checkbox-label:before {
 .features-block__item {
   -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -457,6 +480,89 @@ body .checkbox-label:before {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     margin-bottom: 50px;
+  }
+}
+
+.catalog {
+  background-color: #f5f6f8;
+}
+
+.catalog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog__card {
+  margin-bottom: 30px;
+}
+
+.catalog-card {
+  position: relative;
+  max-width: 570px;
+  -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-card__buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.catalog-card__button {
+  font-size: 11px;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+  height: 30px;
+}
+
+.catalog-card__tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(80, 111, 225, 0.6);
+}
+
+.catalog-card__image {
+  display: block;
+}
+
+.catalog__link {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.catalog__link-more {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.catalog__description {
+  display: block;
+}
+
+@media (max-width: 1199px) {
+  .catalog-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .catalog-card {
+    max-width: 470px;
   }
 }
 /*# sourceMappingURL=style.css.map */
