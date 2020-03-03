@@ -4,16 +4,22 @@
         display: flex
         justify-content: space-between
         align-items: flex-start
+        flex-wrap: wrap
     &-item
         position: relative
         text-align: center
         font-size: 16px
-        flex-basis: 14.66667%
         &__title
             +bold
             margin: 40px 0 15px
         &__subtitle
             margin: 0
+            width: 140px
+            color: #000000
+            font-weight: 300
+            height: 147px
+            font-size: 14px
+            +light
         &__image
             img
                 height: 70px
@@ -47,3 +53,15 @@
             height: 30px
             width: 30px
             border-radius: 50%
+@media ( max-width:992px )
+    .job
+        &-block
+        &-item
+            flex-basis: 33%
+            &__title
+                margin: auto
+                margin-top: 35px
+            &__subtitle
+                margin: auto
+                margin-top: 15px
+    

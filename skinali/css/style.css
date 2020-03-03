@@ -753,14 +753,14 @@ body .checkbox-label:before {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .job-item {
   position: relative;
   text-align: center;
   font-size: 16px;
-  -ms-flex-preferred-size: 14.66667%;
-      flex-basis: 14.66667%;
 }
 
 .job-item__title {
@@ -770,6 +770,12 @@ body .checkbox-label:before {
 
 .job-item__subtitle {
   margin: 0;
+  width: 140px;
+  color: #000000;
+  font-weight: 300;
+  height: 147px;
+  font-size: 14px;
+  font-family: 'Proxima Nova Light',sans-serif;
 }
 
 .job-item__image img {
@@ -825,5 +831,20 @@ body .checkbox-label:before {
   height: 30px;
   width: 30px;
   border-radius: 50%;
+}
+
+@media (max-width: 992px) {
+  .job-item {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+  .job-item__title {
+    margin: auto;
+    margin-top: 35px;
+  }
+  .job-item__subtitle {
+    margin: auto;
+    margin-top: 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
