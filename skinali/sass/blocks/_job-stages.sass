@@ -1,0 +1,49 @@
+.job
+    background-color: #f1f1f1
+    &-block
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+    &-item
+        position: relative
+        text-align: center
+        font-size: 16px
+        flex-basis: 14.66667%
+        &__title
+            +bold
+            margin: 40px 0 15px
+        &__subtitle
+            margin: 0
+        &__image
+            img
+                height: 70px
+        &:nth-child(1)::before
+            content: "1."
+        &:nth-child(2)::before
+            content: "2."
+        &:nth-child(3)::before
+            content: "3."
+        &:nth-child(4)::before
+            content: "4."
+        &:nth-child(5)::before
+            content: "5."
+        &:nth-child(6)::before
+            content: "6."
+        &:before
+            +bold
+            position: absolute
+            display: flex
+            justify-content: center
+            align-items: center
+            transform: translateY(150%)
+            line-height: 0
+            margin-top: 5px
+            top: 0
+            left: 40%
+            color: #507fe1
+            border: 1.5px solid #666
+            background-color: #fff
+            font-size: 18px
+            height: 30px
+            width: 30px
+            border-radius: 50%

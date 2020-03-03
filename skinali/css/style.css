@@ -53,7 +53,7 @@ body img {
 }
 
 body .section {
-  padding: 70px 0;
+  padding: 50px 0;
 }
 
 body .section-title {
@@ -86,6 +86,10 @@ body .button {
   background-color: #506fe1;
   color: #ffffff;
   font-family: 'Proxima Nova Semibold',sans-serif;
+}
+
+body .button:hover {
+  cursor: pointer;
 }
 
 body .button-fitting {
@@ -446,6 +450,24 @@ body .checkbox-label:before {
   }
 }
 
+@media (max-width: 480px) {
+  .form__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__row-checkbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: columns;
+            flex-direction: columns;
+  }
+  .form__checkbox {
+    margin-bottom: 20px;
+  }
+}
+
 .features-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -635,5 +657,173 @@ body .checkbox-label:before {
   .blog-list__image {
     height: 130px;
   }
+}
+
+.price {
+  background-color: #F1F1F1;
+}
+
+.price-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.price-card {
+  position: relative;
+  padding: 20px 0;
+}
+
+.price-card__pricetag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.price-card__pricetag strong {
+  font-family: 'Proxima Nova Semibold',sans-serif;
+}
+
+.price-card__button {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 11px 0px 0 20px;
+  top: 90%;
+  z-index: -1;
+  background-color: #fff;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  height: 100px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.price-card:hover .price-card__button {
+  z-index: 99;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .price-card {
+    -ms-flex-preferred-size: 24%;
+        flex-basis: 24%;
+  }
+  .price-card__pricetag {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 18px 8px;
+  }
+}
+
+@media (max-width: 991px) {
+  .price-block {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .price-card {
+    margin-left: 30px;
+  }
+}
+
+.job {
+  background-color: #f1f1f1;
+}
+
+.job-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.job-item {
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  -ms-flex-preferred-size: 14.66667%;
+      flex-basis: 14.66667%;
+}
+
+.job-item__title {
+  font-family: 'Proxima Nova Semibold',sans-serif;
+  margin: 40px 0 15px;
+}
+
+.job-item__subtitle {
+  margin: 0;
+}
+
+.job-item__image img {
+  height: 70px;
+}
+
+.job-item:nth-child(1)::before {
+  content: "1.";
+}
+
+.job-item:nth-child(2)::before {
+  content: "2.";
+}
+
+.job-item:nth-child(3)::before {
+  content: "3.";
+}
+
+.job-item:nth-child(4)::before {
+  content: "4.";
+}
+
+.job-item:nth-child(5)::before {
+  content: "5.";
+}
+
+.job-item:nth-child(6)::before {
+  content: "6.";
+}
+
+.job-item:before {
+  font-family: 'Proxima Nova Semibold',sans-serif;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateY(150%);
+          transform: translateY(150%);
+  line-height: 0;
+  margin-top: 5px;
+  top: 0;
+  left: 40%;
+  color: #507fe1;
+  border: 1.5px solid #666;
+  background-color: #fff;
+  font-size: 18px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
