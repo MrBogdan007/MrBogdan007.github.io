@@ -1,0 +1,362 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1671px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: #FFFFFF;
+  margin: 0;
+}
+
+body img {
+  max-width: 100%;
+}
+
+.header_1 {
+  position: absolute;
+  width: 1154px;
+  height: 84px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 84px;
+  text-transform: uppercase;
+  color: #1D1C21;
+}
+
+.header_2 {
+  position: absolute;
+  width: 516px;
+  height: 86px;
+  left: 1400px;
+  top: 424px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: #1D1C21;
+}
+
+.header_3 {
+  position: absolute;
+  width: 188px;
+  height: 35px;
+  left: 1400px;
+  top: 586px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+  color: #1D1C21;
+}
+
+.header_4 {
+  position: absolute;
+  width: 175px;
+  height: 29px;
+  left: 1400px;
+  top: 748px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  color: #1D1C21;
+}
+
+.p_1 {
+  position: absolute;
+  width: 540px;
+  height: 81px;
+  left: 1400px;
+  top: 910px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1D1C21;
+}
+
+.p_2 {
+  position: absolute;
+  width: 272px;
+  height: 72px;
+  left: 1400px;
+  top: 1072px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1D1C21;
+}
+
+.main {
+  background: #f1f1f1 url("../img/header/bg.jpg") no-repeat center;
+  background-size: cover;
+  width: 1920px;
+  height: 1100px;
+}
+
+.header__navbar__phone {
+  position: absolute;
+  width: 138px;
+  height: 24px;
+  left: 1377px;
+  top: 35px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #F9F9FB;
+}
+
+.header__navbar__button {
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  left: 1545px;
+  top: 27px;
+  background: #C80A2C;
+  border-radius: 40px;
+}
+
+.header__navbar__vector {
+  position: absolute;
+  width: 1921px;
+  height: 0px;
+  left: 0px;
+  top: 93px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header__navbar__title {
+  position: absolute;
+  width: 180px;
+  height: 36px;
+  left: 120px;
+  top: 29px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+.header__navbar__subtitle {
+  position: absolute;
+  width: 179px;
+  height: 5px;
+  top: 55px;
+  background: #C80A38;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid rgba(81, 11, 186, 0.1);
+  border-left: 1px solid rgba(81, 11, 186, 0.1);
+  height: 80px;
+  width: 70px;
+}
+
+.menu-button__line1 {
+  position: absolute;
+  width: 33px;
+  height: 3px;
+  left: 1767px;
+  top: 59px;
+  background: #FFFFFF;
+}
+
+.menu-button__line2 {
+  position: absolute;
+  width: 33px;
+  height: 3px;
+  left: 1767px;
+  top: 46px;
+  background: #FFFFFF;
+}
+
+.menu-button__line3 {
+  position: absolute;
+  width: 33px;
+  height: 3px;
+  left: 1767px;
+  top: 33px;
+  background: #FFFFFF;
+}
+
+.hero__logo {
+  position: absolute;
+  width: 720px;
+  height: 720px;
+  left: 945px;
+  top: 111px;
+  background: url("../img/hero/logo-new.png");
+  opacity: 0.8;
+}
+
+.hero__title {
+  position: absolute;
+  width: 524px;
+  height: 168px;
+  left: 122px;
+  top: 263px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 84px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.hero__text {
+  position: absolute;
+  width: 540px;
+  height: 81px;
+  left: 120px;
+  top: 438px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #F9F9FB;
+}
+
+.hero__form__input {
+  position: absolute;
+  width: 220px;
+  height: 44px;
+  left: 117px;
+  top: 565px;
+  opacity: 0.2;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+
+.hero__form__input__text {
+  position: absolute;
+  width: 68px;
+  height: 24px;
+  left: 137px;
+  top: 575px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F9F9FB;
+}
+
+.hero__form__input__phone {
+  position: absolute;
+  width: 68px;
+  height: 24px;
+  left: 377px;
+  top: 575px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F9F9FB;
+}
+
+.hero__form__input:nth-child(2) {
+  position: absolute;
+  width: 220px;
+  height: 44px;
+  left: 357px;
+  top: 565px;
+  opacity: 0.2;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+
+.hero__form__button {
+  position: absolute;
+  width: 457px;
+  height: 50px;
+  left: 117px;
+  top: 639px;
+  background: #C80A2C;
+  border-radius: 40px;
+}
+
+.hero__form__prevArrow {
+  position: absolute;
+  width: 42px;
+  height: 12px;
+  left: 112px;
+  top: 761px;
+  opacity: 0.5;
+}
+
+.hero__form__nextArrow {
+  /* XMLID 1523 */
+  position: absolute;
+  width: 42px;
+  height: 12px;
+  left: 180px;
+  top: 760px;
+  color: #FFFFFF;
+}
+
+.bottom__social__text {
+  position: absolute;
+  width: 193px;
+  height: 27px;
+  left: 120px;
+  top: 977px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #F9F9FB;
+}
+/*# sourceMappingURL=style.css.map */
