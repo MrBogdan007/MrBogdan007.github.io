@@ -3,14 +3,18 @@
     background-size: cover
     width: 1920px
     height: 1100px
+    position: relative
 .header
-    &__navbar    
+    padding-top: 29px 
+    &__navbar
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        
         &__phone
-            position: absolute;
+            margin-right: 30px
             width: 138px;
             height: 24px;
-            left: 1377px;
-            top: 35px;
             font-family: Circe;
             font-style: normal;
             font-weight: bold;
@@ -20,42 +24,33 @@
             color: #F9F9FB;
 
         &__button
-            position: absolute;
+            margin-right: 60px
             width: 160px;
             height: 40px;
-            left: 1545px;
-            top: 27px;
-
             background: #C80A2C;
             border-radius: 40px;
+            color: $text-color
         &__vector
-            position: absolute;
             width: 1921px;
             height: 0px;
-            left: 0px;
-            top: 93px;
+            margin-top: 30px
             border: 1px solid rgba(255, 255, 255, 0.2);
 
     &__navbar__title
-        position: absolute;
         width: 180px;
         height: 36px;
-        left: 120px;
-        top: 29px;
-
         font-family: Russo One;
         font-style: normal;
         font-weight: normal;
         font-size: 30px;
         line-height: 36px;
-
         color: #FFFFFF;
+        margin-right: auto
     &__navbar__subtitle
-        position: absolute;
         width: 179px;
         height: 5px;
-        top: 55px;
         background: #C80A38;
+        margin-top: 29px
 
 .menu
     display: none
@@ -69,28 +64,13 @@
     height: 80px
     width: 70px
     &_active
-    &-button__line1
-        position: absolute;
+    &-button
+        display: flex
+        flex-direction: column
+    &-button__line
         width: 33px;
+        margin-top: 5px
         height: 3px;
-        left: 1767px;
-        top: 59px;
-
-        background: #FFFFFF;
-    &-button__line2
-        position: absolute;
-        width: 33px;
-        height: 3px;
-        left: 1767px;
-        top: 46px;
-
-        background: #FFFFFF;
-    &-button__line3
-        position: absolute;
-        width: 33px;
-        height: 3px;
-        left: 1767px;
-        top: 33px;
         background: #FFFFFF;
 
         
