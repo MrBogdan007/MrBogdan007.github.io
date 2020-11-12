@@ -22,9 +22,25 @@
 
 @media (max-width: 768px) {
   .container {
-    max-width: 100%;
-    padding: 0 20px;
+    max-width: 320px;
   }
+}
+
+@font-face {
+  font-family: 'Russo One';
+  src: url("../fonts/RussoOne-Regular.eot");
+  src: url("../fonts/RussoOne-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/RussoOne-Regular.woff2") format("woff2"), url("../fonts/RussoOne-Regular.woff") format("woff"), url("../fonts/RussoOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circe';
+  src: url("../fonts/Circe-Regular.eot");
+  src: local("Circe"), local("Circe-Regular"), url("../fonts/Circe-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Regular.woff") format("woff"), url("../fonts/Circe-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -39,6 +55,14 @@ body {
 
 body img {
   max-width: 100%;
+}
+
+body .input:hover {
+  border: 1px solid white;
+}
+
+body .button:hover {
+  cursor: pointer;
 }
 
 .header_1 {
@@ -155,7 +179,8 @@ body img {
   height: 40px;
   background: #C80A2C;
   border-radius: 40px;
-  color: #FFFFFF;
+  color: white;
+  font-family: 'Circe', sans-serif;
 }
 
 .header__navbar__vector {
@@ -166,8 +191,6 @@ body img {
 }
 
 .header__navbar__title {
-  width: 180px;
-  height: 36px;
   font-family: Russo One;
   font-style: normal;
   font-weight: normal;
@@ -275,11 +298,7 @@ body img {
 }
 
 .hero__title {
-  width: 524px;
-  height: 168px;
-  font-family: Russo One;
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'Russo One', sans-serif;
   font-size: 70px;
   line-height: 84px;
   text-transform: uppercase;
@@ -289,9 +308,7 @@ body img {
 .hero__text {
   width: 540px;
   height: 81px;
-  font-family: Circe;
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'Circe', sans-serif;
   font-size: 18px;
   line-height: 27px;
   color: #F9F9FB;
@@ -307,21 +324,32 @@ body img {
   margin-right: 20px;
   width: 220px;
   height: 44px;
-  opacity: 0.2;
-  border: 1px solid #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
   background: radial-gradient(50% 50% at 50% 50%, rgba(29, 28, 33, 0.85) 0%, #1D1C21 100%);
 }
 
 .hero__form__input__phone {
-  left: 370px;
+  left: 395px;
   top: 475px;
   position: absolute;
+  text-decoration: none;
+  font-family: 'Circe', sans-serif;
+  user-select: none;
 }
 
 .hero__form__input__text {
+  text-decoration: none;
   position: absolute;
   top: 475px;
   left: 160px;
+  font-family: 'Circe', sans-serif;
+  user-select: none;
+}
+
+.hero__form__input:focus {
+  outline: none;
+  border: 1px solid red;
 }
 
 .hero__form__button {
@@ -348,6 +376,10 @@ body img {
 .hero__form__nextArrow {
   display: inline-block;
   color: #FFFFFF;
+}
+
+body input:focus {
+  border: 2px solid red;
 }
 
 .bottom {
@@ -427,10 +459,78 @@ body img {
   bottom: 95px;
 }
 
+.bottom__vector {
+  position: absolute;
+  width: 378px;
+  height: 5px;
+  left: -796px;
+  top: -78px;
+  z-index: 99;
+  background: #C80A2C;
+  transform: rotate(-180deg);
+}
+
+.bottom__rectangle {
+  z-index: 99;
+  position: absolute;
+  width: 1110px;
+  height: 140px;
+  left: 405px;
+  top: 1905px;
+  border: 5px solid #C80A2C;
+  box-sizing: border-box;
+}
+
 .equipment {
   width: 1920px;
   height: 1219px;
   background: url(../img/equipment/equipment_bg.png);
+}
+
+.equipment-div {
+  display: block;
+  border: 4px solid red;
+  text-align: center;
+  width: 200px;
+  height: 20px;
+}
+
+.equipment-title__img1 {
+  z-index: 11;
+  position: absolute;
+  width: 1746px;
+  height: 241px;
+  left: 87px;
+  top: 1158px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 200px;
+  line-height: 241px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #1D1C21;
+}
+
+.equipment-title__img2 {
+  z-index: 9;
+  position: absolute;
+  width: 1746px;
+  height: 241px;
+  left: 87px;
+  top: 1158px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 200px;
+  line-height: 241px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  color: #C80A2C;
+  opacity: 0.25;
+  filter: blur(20px);
 }
 
 .equipment-bottom {
@@ -442,17 +542,31 @@ body img {
 }
 
 .equipment-bottom__img {
-  position: relative;
-  z-index: 99;
+  position: absolute;
+  width: 350px;
+  height: 140px;
+  left: 405px;
+  top: 1905px;
+  background: url(kisspng-certified-personal-trainer-exercise-physical-fitne-personal-training-endure-fitness-carnforth-5b816905e54667.8154667015352076859391.png);
+  z-index: 88;
 }
 
 .equipment-bottom_img {
   z-index: 9;
   position: absolute;
-  left: 300px;
+  width: 350px;
+  height: 140px;
+  left: 405px;
+  top: 1905px;
+  background: url(kisspng-certified-personal-trainer-exercise-physical-fitne-personal-training-endure-fitness-carnforth-5b816905e54667.8154667015352076859391.png);
 }
 
 .equipment-bottom__text {
+  position: absolute;
+  width: 402px;
+  height: 35px;
+  left: 825px;
+  top: 1956px;
   font-family: Circe;
   font-style: normal;
   font-weight: bold;
@@ -462,31 +576,77 @@ body img {
 }
 
 .equipment-bottom__button {
-  font-family: Circe;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #F9F9FB;
-}
-
-.equipment-block {
-  margin-top: 105px;
-  display: flex;
-  justify-content: space-between;
-  margin-left: 150px;
-  flex-wrap: wrap;
-  position: relative;
-  width: 1300px;
+  position: absolute;
+  width: 160px;
+  height: 40px;
+  left: 1290px;
+  top: 1955px;
+  padding-top: 8px;
+  background: #C80A2C;
+  border-radius: 40px;
   text-align: center;
 }
 
-.equipment-block__text {
+.equipment-block_img1 {
   position: absolute;
-  width: 300px;
+  width: 350px;
+  height: 202px;
+  left: 405px;
+  top: 1411px;
+  background: linear-gradient(0deg, rgba(29, 28, 33, 0.9), rgba(29, 28, 33, 0.9)), url(s-4.jpg);
+}
+
+.equipment-block_img2 {
+  position: absolute;
+  width: 350px;
+  height: 202px;
+  left: 785px;
+  top: 1411px;
+  background: linear-gradient(0deg, rgba(29, 28, 33, 0.9), rgba(29, 28, 33, 0.9)), url(s-22.jpg);
+}
+
+.equipment-block_img3 {
+  position: absolute;
+  width: 350px;
+  height: 202px;
+  left: 1165px;
+  top: 1411px;
+  background: linear-gradient(0deg, rgba(29, 28, 33, 0.9), rgba(29, 28, 33, 0.9)), url(s-3.jpg);
+}
+
+.equipment-block_img4 {
+  position: absolute;
+  width: 350px;
+  height: 202px;
+  left: 405px;
+  top: 1643px;
+  background: linear-gradient(0deg, rgba(29, 28, 33, 0.9), rgba(29, 28, 33, 0.9)), url(s-5.jpg);
+}
+
+.equipment-block_img5 {
+  position: absolute;
+  width: 350px;
+  height: 202px;
+  left: 785px;
+  top: 1643px;
+  background: linear-gradient(0deg, rgba(29, 28, 33, 0.9), rgba(29, 28, 33, 0.9)), url(88191381_2497790683659224_880341843252871168_o.jpg);
+}
+
+.equipment-block_img6 {
+  position: absolute;
+  width: 350px;
+  height: 202px;
+  left: 1165px;
+  top: 1643px;
+  background: linear-gradient(0deg, rgba(29, 28, 33, 0.9), rgba(29, 28, 33, 0.9)), url(beautiful-little-girl-is-engaged-gym_1157-29917.jpg);
+}
+
+.equipment-block__text1 {
+  position: absolute;
+  width: 188px;
   height: 35px;
-  left: 0px;
-  top: 0px;
+  left: 445px;
+  top: 1451px;
   font-family: Circe;
   font-style: normal;
   font-weight: bold;
@@ -495,34 +655,74 @@ body img {
   color: #F9F9FB;
 }
 
-.equipment-block__text1 {
-  top: 20px;
-  left: 60px;
-}
-
 .equipment-block__text2 {
-  top: 20px;
-  left: 540px;
+  position: absolute;
+  width: 270px;
+  height: 35px;
+  left: 825px;
+  top: 1451px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+  color: #F9F9FB;
 }
 
 .equipment-block__text3 {
-  top: 20px;
-  left: 1025px;
+  position: absolute;
+  width: 241px;
+  height: 35px;
+  left: 1205px;
+  top: 1451px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+  color: #C80A2C;
 }
 
 .equipment-block__text4 {
-  top: 230px;
-  left: 80px;
+  position: absolute;
+  width: 242px;
+  height: 35px;
+  left: 445px;
+  top: 1683px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+  color: #F9F9FB;
 }
 
 .equipment-block__text5 {
-  top: 230px;
-  left: 540px;
+  position: absolute;
+  width: 245px;
+  height: 35px;
+  left: 825px;
+  top: 1683px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+  color: #F9F9FB;
 }
 
 .equipment-block__text6 {
-  top: 230px;
-  left: 1025px;
+  position: absolute;
+  width: 234px;
+  height: 35px;
+  left: 1205px;
+  top: 1683px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 35px;
+  color: #C80A2C;
 }
 
 .equipment-block__subtext {
@@ -540,33 +740,87 @@ body img {
 }
 
 .equipment-block__subtext1 {
-  top: 100px;
-  left: 60px;
+  position: absolute;
+  width: 272px;
+  height: 72px;
+  left: 445px;
+  top: 1501px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F9F9FB;
 }
 
 .equipment-block__subtext2 {
-  top: 100px;
-  left: 540px;
+  position: absolute;
+  width: 272px;
+  height: 72px;
+  left: 825px;
+  top: 1501px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F9F9FB;
 }
 
 .equipment-block__subtext3 {
-  top: 100px;
-  left: 1025px;
+  position: absolute;
+  width: 272px;
+  height: 48px;
+  left: 1205px;
+  top: 1501px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F9F9FB;
 }
 
 .equipment-block__subtext4 {
-  top: 320px;
-  left: 80px;
+  position: absolute;
+  width: 272px;
+  height: 72px;
+  left: 445px;
+  top: 1733px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F9F9FB;
 }
 
 .equipment-block__subtext5 {
-  top: 320px;
-  left: 540px;
+  position: absolute;
+  width: 272px;
+  height: 72px;
+  left: 825px;
+  top: 1733px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F9F9FB;
 }
 
 .equipment-block__subtext6 {
-  top: 320px;
-  left: 1025px;
+  position: absolute;
+  width: 272px;
+  height: 72px;
+  left: 1205px;
+  top: 1733px;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F9F9FB;
 }
 
 .equipment-block__numbers {
@@ -580,37 +834,162 @@ body img {
 }
 
 .equipment-block__numbers1 {
-  left: 320px;
-  top: 0;
+  position: absolute;
+  width: 21px;
+  height: 22px;
+  left: 725px;
+  top: 1420px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  color: #F9F9FB;
 }
 
 .equipment-block__numbers2 {
-  left: 780px;
-  top: 0;
+  position: absolute;
+  width: 24px;
+  height: 22px;
+  left: 1103px;
+  top: 1420px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  color: #F9F9FB;
 }
 
 .equipment-block__numbers3 {
-  left: 1270px;
-  top: 0;
+  position: absolute;
+  width: 25px;
+  height: 22px;
+  left: 1483px;
+  top: 1420px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  color: #F9F9FB;
 }
 
 .equipment-block__numbers4 {
-  left: 320px;
-  top: 215px;
+  position: absolute;
+  width: 25px;
+  height: 22px;
+  left: 723px;
+  top: 1652px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  color: #F9F9FB;
 }
 
 .equipment-block__numbers5 {
-  left: 789px;
-  top: 212px;
+  position: absolute;
+  width: 24px;
+  height: 22px;
+  left: 1103px;
+  top: 1652px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  color: #F9F9FB;
 }
 
 .equipment-block__numbers6 {
-  left: 1270px;
-  top: 212px;
+  position: absolute;
+  width: 25px;
+  height: 22px;
+  left: 1483px;
+  top: 1652px;
+  font-family: Russo One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  color: #F9F9FB;
+}
+
+.equipment-block__rectangle1 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 715px;
+  top: 1411px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.equipment-block__rectangle2 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 1095px;
+  top: 1411px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.equipment-block__rectangle3 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 1475px;
+  top: 1411px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.equipment-block__rectangle4 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 715px;
+  top: 1643px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.equipment-block__rectangle5 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 1095px;
+  top: 1643px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.equipment-block__rectangle6 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 1475px;
+  top: 1643px;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .equipment-header {
-  padding-top: 122px;
+  position: absolute;
+  width: 516px;
+  height: 86px;
+  left: 702px;
+  top: 1220px;
+  z-index: 99;
   font-family: Russo One;
   font-style: normal;
   font-weight: normal;
@@ -625,6 +1004,7 @@ body img {
   width: 1920px;
   height: 8200px;
   position: relative;
+  background-color: #1C1B20;
 }
 
 .photos {
@@ -667,6 +1047,7 @@ body img {
 }
 
 .photos-title__img1 {
+  font-family: 'Russo One', sans-serif;
   position: absolute;
   left: 112px;
   top: 2377px;
@@ -693,6 +1074,7 @@ body img {
   /* identical to box height */
   text-align: center;
   text-transform: uppercase;
+  font-family: 'Russo One', sans-serif;
   color: #1D1C21;
 }
 
@@ -709,6 +1091,7 @@ body img {
   color: #C80A2C;
   opacity: 0.25;
   filter: blur(20px);
+  font-family: 'Russo One', sans-serif;
 }
 
 .photos-title__img22 {

@@ -57,11 +57,8 @@
         opacity: 0.8;
     &__title
         
-        width: 524px
-        height: 168px
-        font-family: Russo One
-        font-style: normal;
-        font-weight: normal
+        +bold
+
         font-size: 70px
         line-height: 84px
         text-transform: uppercase
@@ -70,9 +67,8 @@
 
         width: 540px
         height: 81px
-        font-family: Circe
-        font-style: normal
-        font-weight: normal
+        +light
+
         font-size: 18px
         line-height: 27px
         color: #F9F9FB
@@ -80,25 +76,36 @@
         &__arrows
             width: 42px;
             height: 12px;
+
         &__input
             margin-top: 46px
             margin-right: 20px
             width: 220px
-            height: 44px
-            opacity: 0.2
-            border: 1px solid #FFFFFF
+            height: 44px        
+            border: 1px solid rgba(255, 255, 255,0.2 );
+            color: white
             background: radial-gradient(50% 50% at 50% 50%, rgba(29, 28, 33, 0.85) 0%, #1D1C21 100%);
             &__phone
-                left: 370px
+                left: 395px
                 top: 475px
                 position: absolute
-                
+                text-decoration: none
+                +light
+                user-select: none
             &__text
+                text-decoration: none
                 position: absolute
                 top: 475px
                 left: 160px
+                +light
+                user-select: none
 
-                
+        &__input:focus
+            outline: none 
+            border: 1px solid red;
+            
+
+            
         &__button
             margin-top: 30px
             width: 457px
@@ -120,7 +127,11 @@
         &__nextArrow
             display: inline-block
             color: $text-color
-            
+
+body
+    input:focus
+        border: 2px solid red
+    input:hover
 
             
 

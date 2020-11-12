@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Russo One';
+    src: url('../fonts/RussoOne-Regular.eot');
+    src: url('../fonts/RussoOne-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RussoOne-Regular.woff2') format('woff2'),
+        url('../fonts/RussoOne-Regular.woff') format('woff'),
+        url('../fonts/RussoOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+	font-family: 'Circe';
+	src: url('../fonts/Circe-Regular.eot');
+	src: local('Circe'), local('Circe-Regular'),
+		url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Circe-Regular.woff') format('woff'),
+		url('../fonts/Circe-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@mixin bold {
+    font-family: 'Russo One', sans-serif;
+}
+@mixin light {
+    font-family: 'Circe', sans-serif;
+}
